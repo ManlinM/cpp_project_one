@@ -3,7 +3,7 @@
 #include<fstream>
 #include<iomanip>
 /*Name:Manlin Mao
-Purpose:Assignment3, produce report showing bird sightings for The Kingston Bird Watchers Society*/
+Purpose:produce report showing bird sightings for The Kingston Bird Watchers Society*/
 using namespace std;
 int main() {
 	//Housekeeping
@@ -47,8 +47,7 @@ int main() {
 		//User input
 		cout << "Enter numbers of sighting or ^Z to end: ";
 		cin >> numbSightings[times];
-		if (cin.eof())
-			break;
+		
 		//Validation
 		while (numbSightings[times] < 0 || numbSightings[times]>100 || cin.fail())
 		{
